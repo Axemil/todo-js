@@ -3,8 +3,88 @@
   padding: 0;
   box-sizing: border-box;
 }
+html,
+body {
+	height: 100%;
+}
 body{
   font: 14px/1.4 Arial;
-  background: #222;
+  background: rgb(241, 241, 241);
+  color: #222;
+}
+a{
+  color: inherit;
+  text-decoration: none;
+}
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+.main {
+	flex: 1 0 auto;
+}
+.main__h1{
+  font-weight: 100;
+  padding: 10px 0;
+  font-size: 3rem;
+}
+.main__form{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.form{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 10px;
+}
+.form__input{
+  font-size: 1.3rem;
+  display: block;
+  border: none;
+  margin: 0;
+  padding: 5px;
+}
+.form__input--text{
+ border-top-left-radius: 10px;
+ border-bottom-left-radius: 10px;
+}
+.form__input--text:required{
+  content: "*Required input"
+}
+.form__input--submit{
+  background: rgb(44, 44, 44);
   color: whitesmoke;
+  text-transform: uppercase;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.form__input--submit:hover{
+  transition: .3s;
+  background: rgb(75, 75, 75);
+}
+.form__input--text:focus{
+  outline: none;
+}
+.footer {
+  box-shadow: 0 1px 10px rgba(0, 0, 0, .2);
+  background: rgb(44, 44, 44);
+  color: rgb(44, 44, 44);
+
+	flex: 0 0 auto;
+}
+.footer__text{
+  padding: 10px 0;
+  margin: 5px 0;
+  font-weight: 600;
+}
+.footer__link{
+  padding: 10px;
+  border-radius: 10px;
+  background: whitesmoke
+}
+.--center{
+  text-align: center;
 }
